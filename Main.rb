@@ -5,6 +5,10 @@ operand=equation.tr("0-9", "")
 operand=operand.split("")
 opCount=operand.length
 ans =0;
+=begin
+fix bodmas, make them all separate
+and simplify into a def so that the majority is shrunk down
+=end
 while(equation.include?("*")or equation.include?("/"))
 for i in 0...opCount
   if operand[i]=="*"
